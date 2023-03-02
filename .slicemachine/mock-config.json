@@ -81,6 +81,11 @@
         },
         "items": {}
       }
+    },
+    "HomeSliding": {
+      "default": {
+        "primary": {}
+      }
     }
   },
   "_cts": {

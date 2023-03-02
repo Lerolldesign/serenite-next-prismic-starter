@@ -1,0 +1,89 @@
+$black: #141414;
+$yellowGreen: yellowgreen;
+$yellow: yellow;
+$royalblue: royalblue;
+$magenta: magenta;
+
+
+  
+  ::-moz-selection {
+    color: white;
+    background: black;
+  }
+  
+  ::selection {
+    color: white;
+    background: black;
+  }
+
+
+  // Colors stone-200
+$bg-color: rgb(231, 229, 228);
+$dot-color: rgb(174, 174, 177);
+
+// Dimensions
+$dot-size: 1px;
+$dot-space: 22px;
+
+.rombus {
+	background:
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+	background-size: $dot-space $dot-space;
+}
+
+
+  // Colors 212121
+  $bg-color-dark: rgb(27, 27, 26);
+  $dot-color-dark: rgb(91, 91, 94);
+  
+
+  
+  .rombus_d {
+    background:
+      linear-gradient(90deg, $bg-color-dark ($dot-space - $dot-size), transparent 1%) center,
+      linear-gradient($bg-color-dark ($dot-space - $dot-size), transparent 1%) center,
+      $dot-color-dark;
+    background-size: $dot-space $dot-space;
+  }
+
+
+.scroll-container {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    will-change: transform;
+  
+    .ghost {
+      width: 10vw;
+    }
+  }
+  
+  .thumbnails-container {
+    position: relative;
+    height: 100vh;
+    width: 250vh;
+    display: flex;
+    background-color: $black;
+    color:white;
+  
+    .thumbnails {
+      position: relative;
+      border: 0px solid $yellow; 
+      height: 100%;
+  
+      & > *:not(:last-child) {
+        margin-right: 25px;
+      }
+  
+      .thumbnail {
+        height: 100%;
+        width: 100%;
+        background-color: $royalblue;
+        border: 15px solid magenta;
+      }
+    }
+  }
+  

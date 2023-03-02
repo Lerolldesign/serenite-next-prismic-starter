@@ -26,7 +26,9 @@
         "config": {
           "label": "Parent",
           "select": "document",
-          "customtypes": ["page"]
+          "customtypes": [
+            "page"
+          ]
         }
       },
       "slices": {
@@ -50,6 +52,9 @@
               "type": "SharedSlice"
             },
             "text_with_image": {
+              "type": "SharedSlice"
+            },
+            "home_sliding": {
               "type": "SharedSlice"
             }
           }

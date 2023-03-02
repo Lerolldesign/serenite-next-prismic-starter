@@ -6,6 +6,7 @@ import { repositoryName } from "../prismicio";
 import { Heading } from "../components/Heading";
 
 import "../styles/globals.css";
+import "../styles/styles.scss";
 
 const richTextComponents = {
   heading1: ({ children }) => (
